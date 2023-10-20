@@ -87,9 +87,11 @@ with open(oligo_file) as f:
 print('Number of experiments found in oligo file:', len(exp_dict))
 print('Number of bigwig files found:', len(bigwig_list))
 print('Number of experiments with completed peak calls found:', len(completed_list))
+print()
 
 # %%
 for i, exp in enumerate(exp_dict):
+    print(exp)
     bw_lotron2 = lotron2.BigwigData(exp_dict[exp]['file'])
     chrom_cov_array = bw_lotron2.get_chrom_info_make_coverage_map(exp_dict[exp]['chr'])
     if single_read_cov_depth == 'estimate':
