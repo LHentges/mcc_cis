@@ -6,7 +6,7 @@
 * Clone repo and navigate to the mcc_cis/ directory 
 * Install necessary packages in new environment
   * `conda env create -f McCis.yml`
-  * `conda actvate mccis`
+  * `conda activate mccis`
 
 ## Usage
 
